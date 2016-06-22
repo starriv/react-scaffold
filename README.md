@@ -13,8 +13,8 @@ This project contains the react infrastructure
 
 # Run
 default use development model
-- dev npm run dev && open your brower to http://127.0.0.1:3002
-- prod npm run build
+- dev:  npm run dev && open your brower to http://127.0.0.1:3002
+- prod: npm run build
 
 
 # React 脚手架
