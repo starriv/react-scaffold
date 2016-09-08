@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "一个基于ES6的 React 脚手架",
   "scripts": {
-    "dev": "rm -rf ./dist && node ./build/server.js",
+    "dev": "node ./build/server.js",
     "build": "rm -rf ./dist && webpack --config ./build/webpack.prod.config.js"
   },
   "author": "i@starriv.com",
