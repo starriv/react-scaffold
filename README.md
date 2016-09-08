@@ -1,6 +1,6 @@
 # React Scaffold
 
-That is a simple React scaffolding, it contains a Redux and React-Router.
+That is a simple React scaffolding, it contains a React,Redux,React-Router.
 Hope can help you fast develop
 
 [![Build Status](https://travis-ci.org/starriv/react-scaffold.svg?branch=master)](https://travis-ci.org/starriv/react-scaffold)
@@ -21,7 +21,8 @@ default use development model
 
 
 # React 脚手架
-包含基础的React + React Router + Redux 项目结构
+这是一个基础React脚手架，它包含有React,React Router, Redux。
+希望它能帮你住快速开发。
 
 # 特点
 - ES6+的支持,使用Babel转换
