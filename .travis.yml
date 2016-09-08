@@ -1,6 +1,17 @@
 language: node_js
+notifications:
+  email:
+    - starriv.993@gmail.com
+cache:
+  directories:
+    - node_modules
 node_js:
   - "4.5.0"
 before_install:
   - npm install -g webpack
   - npm install
+branches:
+  only:
+    - master
+script:
+  - npm run build
