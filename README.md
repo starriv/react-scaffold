@@ -1,5 +1,7 @@
 # React Scaffold
-This project contains the React + React Router + Redux infrastructure
+
+That is a simple React scaffolding, it contains a Redux and React-Router.
+Hope can help you fast develop
 
 [![Build Status](https://travis-ci.org/starriv/react-scaffold.svg?branch=master)](https://travis-ci.org/starriv/react-scaffold)
 
