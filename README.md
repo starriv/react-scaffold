@@ -1,6 +1,6 @@
 # React Scaffold
 This project contains the react infrastructure
-
+[![Build Status](https://travis-ci.org/starriv/react-scaffold.svg?branch=master)](https://travis-ci.org/starriv/react-scaffold)
 # Feature
 - ES6+ support, use babel
 - with development and the product model
