@@ -2,8 +2,8 @@ import React, {Component, PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {addMessage} from '../../actions';
-import './app.less';
-class App extends Component {
+import './hello.less';
+class Hello extends Component {
 
     static propTypes = {
         actions: PropTypes.object.isRequired,
@@ -29,4 +29,4 @@ export default connect((store) => {
             addMessage
         }, dispatch)
     };
-})(App);
+})(Hello);
