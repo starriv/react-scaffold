@@ -1,18 +1,18 @@
-import React from 'react'
-import {render} from 'react-dom'
-import {createStore} from 'redux'
-import  {Provider} from 'react-redux'
-import {Router, Route, browserHistory} from 'react-router'
-import {syncHistoryWithStore} from 'react-router-redux'
-import reducer from './reducers/index'
-import App from './components/app/app'
+import React from 'react';
+import {render} from 'react-dom';
+import {createStore} from 'redux';
+import  {Provider} from 'react-redux';
+import {Router, Route, browserHistory} from 'react-router';
+import {syncHistoryWithStore} from 'react-router-redux';
+import reducer from './reducers/index';
+import App from './components/app/app';
 
 
-const store = createStore(reducer)
+const store = createStore(reducer);
 
-const history = syncHistoryWithStore(browserHistory, store)
+const history = syncHistoryWithStore(browserHistory, store);
 
-const node = document.getElementById('app')
+const node = document.getElementById('app');
 render(
     <Provider store={store}>
         <Router history={history}>
@@ -21,4 +21,4 @@ render(
         </Router>
     </Provider>,
     node
-)
+);
