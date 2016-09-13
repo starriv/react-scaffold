@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "description": "一个基于ES6的 React 脚手架",
     "scripts": {
-        "dev": "node ./build/server.js",
-        "build": "rm -rf ./dist && webpack --config ./build/webpack.prod.config.js",
+        "dev": "npm run eslint && node ./build/server.js",
+        "build": "rm -rf ./dist && npm run eslint && webpack --config ./build/webpack.prod.config.js",
         "eslint": "npm cache clean && eslint --ext .jsx .js src"
     },
     "author": "i@starriv.com",
