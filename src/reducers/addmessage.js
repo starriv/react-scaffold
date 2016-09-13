@@ -1,4 +1,6 @@
-import {ADD_MESSAGE} from '../actions'
+import {
+    ADD_MESSAGE
+} from '../actions'
 
 const initialState = {
     id: 0,

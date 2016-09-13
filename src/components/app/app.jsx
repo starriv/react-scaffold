@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
-import {connect} from  'react-redux'
+import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import {addMessage} from  '../../actions'
+import {addMessage} from '../../actions'
 import './app.less';
 class App extends Component {
 
@@ -16,14 +16,12 @@ class App extends Component {
     }
 }
 
-export default connect(
-    (store) => {
-        return {
-            addmessage: store.addmessage,
-
-        }
-    }, (dispatch) => {
-        return {
-            actions: bindActionCreators({addMessage}, dispatch)
-        }
-    })(App);
+export default connect((store) => {
+    return {addmessage: store.addmessage}
+}, (dispatch) => {
+    return {
+        actions: bindActionCreators({
+            addMessage
+        }, dispatch)
+    }
+})(App);
