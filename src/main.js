@@ -1,23 +1,33 @@
 import React from 'react';
-import {render} from 'react-dom';
-import {createStore} from 'redux';
+import ReactDOM from 'react-dom';
+import {createStore, applyMiddleware} from 'redux';
 import  {Provider} from 'react-redux';
-import {Router, Route, browserHistory} from 'react-router';
-import {syncHistoryWithStore} from 'react-router-redux';
-import reducer from './reducers/index';
+import {Route} from 'react-router';
+import {ConnectedRouter, routerMiddleware} from 'react-router-redux';
+import createHistory from 'history/createBrowserHistory';
+import reducers from './reducers/index';
 import App from './containers/App';
 
-const store = createStore(reducer);
+const middleware = routerMiddleware(history);
 
-const history = syncHistoryWithStore(browserHistory, store);
+const store = createStore(
+    reducers,
+    applyMiddleware(middleware)
+);
+
+const history = createHistory(store);
+
 
 const node = document.getElementById('app');
-render(
+
+ReactDOM.render(
     <Provider store={store}>
-        <Router history={history}>
-            <Route path="/" component={App}>
-            </Route>
-        </Router>
+        { /* ConnectedRouter will use the store from Provider automatically */ }
+        <ConnectedRouter history={history}>
+            <div>
+                <Route exact path="/" component={App}/>
+            </div>
+        </ConnectedRouter>
     </Provider>,
     node
 );

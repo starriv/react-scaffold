@@ -1,7 +1,9 @@
 import {
     combineReducers
 } from 'redux';
+
 import addmessage from './addmessage';
+
 import {
     routerReducer
 } from 'react-router-redux';
