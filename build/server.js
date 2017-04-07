@@ -1,12 +1,12 @@
-let webpack = require("webpack");
-let WebpackDevServer = require('webpack-dev-server');
-const webpackConfig = require('./webpack.dev.config.js');
+var webpack = require("webpack");
+var WebpackDevServer = require('webpack-dev-server');
+var webpackConfig = require('./webpack.dev.config.js');
 
-const compiler = webpack(webpackConfig);
-const host = '127.0.0.1';
-const port = '3002';
+var compiler = webpack(webpackConfig);
+var host = '127.0.0.1';
+var port = '3002';
 
-const server = new WebpackDevServer(compiler, {
+var server = new WebpackDevServer(compiler, {
     publicPath: webpackConfig.output.publicPath,
     hot: true,
     historyApiFallback: true,

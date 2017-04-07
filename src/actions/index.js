@@ -1,6 +1,6 @@
 import * as ActionType from '../constants/ActionTypes';
 
-export function addMessage(data) {
+export function ADD_MESSAGE(data) {
     data.id++;
     data.text = "welcome use Redux" + data.id;
     console.log(data);

@@ -2,7 +2,7 @@ import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import Hello from '../components/hello/hello';
-import {addMessage} from '../actions';
+import {ADD_MESSAGE} from '../actions';
 
 class App extends Component {
     render() {
@@ -28,7 +28,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators({
-            addMessage
+            ADD_MESSAGE
         }, dispatch)
     };
 }

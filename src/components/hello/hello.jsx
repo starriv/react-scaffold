@@ -2,10 +2,9 @@ import React, {Component, PropTypes} from 'react';
 import './hello.less';
 
 class Hello extends Component {
-
     render() {
         return (
-            <p className="hello" onClick={ () => this.props.actions.addMessage(this.props.addmessage) }>Hello React</p>
+            <p className="hello" onClick={() => this.props.actions.ADD_MESSAGE(this.props.addmessage)}>Hello React</p>
         );
     }
 }
