@@ -22,7 +22,7 @@ ReactDOM.render(
         { /* ConnectedRouter will use the store from Provider automatically */ }
         <ConnectedRouter history={history}>
             <div>
-                <Route exact path="/" component={App}/>
+                <Route exact path="*" component={App}/>
             </div>
         </ConnectedRouter>
     </Provider>,
