@@ -18,9 +18,7 @@
         "redux": "^3.6.0",
         "redux-form": "^5.3.4",
         "redux-logger": "^2.10.2",
-        "redux-thunk": "^2.2.0"
-    },
-    "devDependencies": {
+        "redux-thunk": "^2.2.0",
         "chunk-manifest-webpack-plugin": "^1.0.0",
         "html-webpack-plugin": "^2.28.0",
         "autoprefixer-loader": "^3.2.0",
