@@ -8,16 +8,9 @@ import {ADD_MESSAGE} from '../actions'
 class App extends Component {
     render() {
         return (
-            <Hello actions={this.props.actions} addmessage={this.props.addmessage}/>
+            <Hello/>
         )
     }
-}
-
-App.propTypes = {
-    // action
-    actions: PropTypes.object.isRequired,
-    //初始的state
-    addmessage: PropTypes.object
 }
 
 // 哪些 Redux 全局的 state 是我们组件想要通过 props 获取的？
