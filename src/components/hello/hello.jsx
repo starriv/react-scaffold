@@ -1,17 +1,17 @@
-import React, {Component, PropTypes} from 'react';
-import './hello.less';
+import React, {Component, PropTypes} from 'react'
+import './hello.less'
 
 class Hello extends Component {
     render() {
         return (
             <p className="hello" onClick={() => this.props.actions.ADD_MESSAGE(this.props.addmessage)}>Hello React</p>
-        );
+        )
     }
 }
 
 Hello.propTypes = {
     actions: PropTypes.object.isRequired,
     addmessage: PropTypes.object
-};
+}
 
-export default Hello;
+export default Hello

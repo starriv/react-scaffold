@@ -1,16 +1,16 @@
 import {
     combineReducers
-} from 'redux';
+} from 'redux'
 
-import addmessage from './addmessage';
+import addmessage from './addmessage'
 
 import {
     routerReducer
-} from 'react-router-redux';
+} from 'react-router-redux'
 
 const rootReducer = combineReducers({
     addmessage,
     routing: routerReducer
-});
+})
 
-export default rootReducer;
+export default rootReducer
