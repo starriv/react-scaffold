@@ -8,12 +8,13 @@ import createHistory from 'history/createBrowserHistory'
 import reducers from './reducers/index'
 import App from './containers/App'
 
-const middleware = routerMiddleware(history)
-const store = createStore(
+let history, middleware, store
+middleware = routerMiddleware(history)
+store = createStore(
     reducers,
     applyMiddleware(middleware)
 )
-var history = createHistory(store)
+history = createHistory(store)
 
 const node = document.getElementById('app')
 
