@@ -4,6 +4,7 @@ That is a simple React scaffolding, it contains a React,Redux,React-Router.
 Hope can help you fast develop
 
 [![Build Status](https://travis-ci.org/starriv/react-scaffold.svg?branch=master)](https://travis-ci.org/starriv/react-scaffold)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 # Feature
 - ES6+ support, use babel

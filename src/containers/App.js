@@ -1,30 +1,31 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import Hello from '../components/hello/hello'
-import {ADD_MESSAGE} from '../actions'
+import { ADD_MESSAGE } from '../actions'
 
 class App extends Component {
-    render() {
-        return (
-            <Hello/>
-        )
-    }
+  render() {
+    return <Hello />
+  }
 }
 
 // 哪些 Redux 全局的 state 是我们组件想要通过 props 获取的？
 function mapStateToProps(state) {
-    return {addmessage: state.addmessage}
+  return { addmessage: state.addmessage }
 }
 
 // 哪些 action 创建函数是我们想要通过 props 获取的？
 function mapDispatchToProps(dispatch) {
-    return {
-        actions: bindActionCreators({
-            ADD_MESSAGE
-        }, dispatch)
-    }
+  return {
+    actions: bindActionCreators(
+      {
+        ADD_MESSAGE,
+      },
+      dispatch,
+    ),
+  }
 }
 
 /**
