@@ -6,7 +6,6 @@
         "dev": "node ./build/server.js",
         "build": "rm -rf ./dist && npm run eslint && webpack --config ./build/webpack.prod.config.js",
         "eslint": "npm cache clean && eslint --ext .jsx .js src",
-        "format": "prettier --single-quote true --semi false --trailing-comma none --write ./src/*/*/*.js",
         "precommit": "lint-staged"
     },
     "author": "i@starriv.com",
@@ -55,7 +54,7 @@
     ],
     "lint-staged": {
         "*.js": [
-            "prettier --write"
+            "prettier --single-quote true --semi false --trailing-comma none --write"
         ]
     },
     "devDependencies": {
