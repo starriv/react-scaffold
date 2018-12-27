@@ -1,0 +1,61 @@
+{
+  "name": "react-scaffold",
+  "author": {
+    "name": "starriv",
+    "email": "starriv.993@gmail.com"
+  },
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.2.1",
+    "mobx": "^5.8.0",
+    "mobx-react": "^5.4.3",
+    "mobx-utils": "^5.1.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.2",
+    "reactstrap": "^6.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "pretty-quick": "^1.8.0",
+    "stylelint-prettier": "^1.0.5",
+    "stylelint-config-prettier": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint-fix": "eslint --config .eslintrc  --fix src/",
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": {
+        "*.{js,jsx}": [
+          "pretty-quick --staged",
+          "eslint-check",
+          "git add ."
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
